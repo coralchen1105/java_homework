@@ -1,0 +1,18 @@
+
+public class GrowingMoney {
+	public static void main(String[] args){
+		int base = 10000;
+		float interest = 1.05f;
+		int sum = 0;
+		
+		if( base <= 20000 ){
+			
+			base = (int) (10000 * interest);
+			System.out.println(sum + ":" + base);
+			sum++;
+			
+		}
+		
+		
+	}
+}

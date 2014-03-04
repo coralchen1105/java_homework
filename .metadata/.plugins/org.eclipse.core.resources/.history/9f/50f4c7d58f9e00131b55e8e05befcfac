@@ -1,0 +1,12 @@
+
+public class LetureTest {
+	public static void main(String[] args){
+		
+		int a = 50;
+		char c;
+		
+		c = (char)a;
+		System.out.println(a);
+		
+	}
+}

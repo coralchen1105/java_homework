@@ -1,0 +1,36 @@
+import java.text.*;
+
+public class GrowingMoney {
+	public static void main(String[] args){
+		double base = 10000;
+		double interest = 1.05d;
+		int sum = 0;
+		
+		DecimalFormat df = new DecimalFormat("#,###.##");
+		System.out.println("Initial: " + "$" + df.format(base));
+		
+//		while( base <= 20000 ){
+//			
+//			
+//			base *= interest;		
+//			// format to two floating points number and return string type
+//			
+//			String result = df.format(base);
+//			sum++;
+//			System.out.println("year " + sum + "   " + "$" + result);
+//			
+//		}
+		for(int i = 0 ; true; i++){
+			base *= interest;		
+			// format to two floating points number and return string type
+			
+			String result = df.format(base);
+			System.out.println("year " + i + "   " + "$" + result);
+			
+			if(base>20000){
+				break;
+			}
+		}
+	
+	}
+}

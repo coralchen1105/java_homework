@@ -1,0 +1,21 @@
+import java.text.*;
+
+public class GrowingMoney {
+	public static void main(String[] args){
+		double base = 10000;
+		double interest = 1.05d;
+		int sum = 0;
+		
+		while( base <= 20000 ){
+			
+			base = base * interest;		
+			// format to two floating points number and return string type
+			DecimalFormat df = new DecimalFormat("#,###.##");
+			String result = df.format(base);
+			sum++;
+			System.out.println("year:" + sum + "   " + "$" + result);
+			
+		}
+	
+	}
+}

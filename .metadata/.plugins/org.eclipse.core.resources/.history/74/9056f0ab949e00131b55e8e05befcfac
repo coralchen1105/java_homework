@@ -1,0 +1,16 @@
+
+public class LetureTest {
+	public static void main(String[] args){
+		
+		int a = 50;
+		byte c;
+		
+		double d = 4.55234234;
+		
+		c = (byte) a;
+		
+		double n = Math.round(d);
+		System.out.println(n);
+		
+	}
+}
